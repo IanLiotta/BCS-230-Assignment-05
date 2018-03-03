@@ -1,6 +1,5 @@
+// BCS 230 Assignment 05
 // Ian Liotta
-// BCS230 Lab 03 Task 03
-// 2/15/18
 
 #include "stdafx.h"
 #include <string>

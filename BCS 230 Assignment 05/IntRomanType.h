@@ -1,3 +1,6 @@
+// BCS 230 Assignment 05
+// Ian Liotta
+
 #ifndef INTROMANTYPE_H
 #define INTROMANTYPE_H
 
