@@ -1,0 +1,27 @@
+// BCS 230 Lab 05 Task 03
+// Ian Liotta
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include "IntRomanType.h"
+using namespace std;
+
+int main()
+{
+	int input = 1;
+	IntRomanType roman;
+	do {
+		cout << "Enter an integer from 1 - 5,000 to be converted to Roman numerals.\n";
+		cout << "(0 to exit)\n";
+		cin >> input;
+		if (input > 5000)
+			cout << "Integer must be between 1 and 5,000 (0 to exit.)\n\n";
+		else if (input > 0) {
+			roman.setNumInt(input);
+			cout << roman.getNumInt() << " = " << roman.getNumRoman() << "\n\n";
+		}
+	} while (input > 0);
+
+    return 0;
+}

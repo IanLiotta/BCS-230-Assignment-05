@@ -21,12 +21,24 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IntRomanType.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RomanType.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BCS 230 Assignment 05.cpp">
+    <ClCompile Include="IntRomanType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RomanType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

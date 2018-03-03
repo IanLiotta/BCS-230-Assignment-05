@@ -1,0 +1,42 @@
+// BCS 230 Lab 05 Task 03.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+//char romanNums[] = { 'I','V','X','L','C','D','M' };
+//int romanInts[] = { 1,5,10,50,100,500,1000 };
+
+string romanNums[] = { "I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M" };
+int romanInts[] = { 1,   4,   5,   9,    10,   40,  50,  90,   100,  400,  500, 900, 1000 };
+
+string intToRoman(int);
+
+int main()
+{
+	int input = 1;
+	do {
+		cout << "Enter an integer from 1 - 20 to be converted to Roman numerals.\n";
+		cout << "(0 to exit)\n";
+		cin >> input;
+		if (input > 20)
+			cout << "Integer must be between 1 and 20 (0 to exit.)\n\n";
+		else if (input > 0)
+			cout << intToRoman(input) << "\n\n";
+	} while (input > 0);
+
+	return 0;
+}
+
+string intToRoman(int num) {
+	string roman;
+	for (int i = 12; i >= 0; i--) {
+		while ((num / romanInts[i]) > 0) {
+			roman += romanNums[i];
+			num -= romanInts[i];
+		}
+	}
+	return roman;
+}
